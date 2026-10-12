@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepLux | Premium Shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/42/Stepik_logotype.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo"><i class="fas fa-shoe-prints"></i> StepLux</a>
+
+    <nav class="navbar">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#categories">Kategoriyalar</a>
+        <a href="#products">Mahsulotlar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <div class="header-icons">
+        <button id="search-toggle" aria-label="Qidirish"><i class="fas fa-search"></i></button>
+        <button id="user-toggle" aria-label="Profil"><i class="fas fa-user"></i></button>
+        <button id="menu-toggle" aria-label="Menyu"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <div class="search-box" id="search-box">
+        <input type="text" id="search-input" placeholder="Mahsulot qidiring...">
+        <button id="search-submit"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">2026 YANGI MAVSUM</span>
+        <h1>Har bir qadamda<br><span>o‘z uslubingni</span> yarat.</h1>
+        <p>Eng zamonaviy krossovkalar, premium tuflilar va kundalik oyoq kiyimlar — barchasi bitta joyda.</p>
+        <div class="hero-buttons">
+            <a href="#products" class="btn">Xarid qilish <i class="fas fa-arrow-right"></i></a>
+            <a href="#about" class="btn btn-outline">Biz haqimizda</a>
+        </div>
+        <div class="hero-stats">
+            <div><strong>500+</strong><span>Mahsulotlar</span></div>
+            <div><strong>10K+</strong><span>Mijozlar</span></div>
+            <div><strong>4.9</strong><span>Mijozlar bahosi</span></div>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="hero-circle"></div>
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1100&q=90" alt="Premium sport krossovka">
+        <div class="floating-card">
+            <span>Hafta mahsuloti</span>
+            <h3>Air Sport X</h3>
+            <strong>1 299 000 so‘m</strong>
+        </div>
+        <div class="hero-number">01 / 04</div>
+    </div>
+</section>
+
+<section class="categories section" id="categories">
+    <div class="section-title">
+        <div>
+            <span class="eyebrow">O‘ZINGIZGA MOSINI TANLANG</span>
+            <h2>Kategoriyalar</h2>
+        </div>
+        <p>Har qanday vaziyat uchun<br>o‘zingizga mos poyabzal.</p>
+    </div>
+
+    <div class="category-grid">
+        <a href="#products" class="category-card" data-category="Krossovkalar">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=600&q=85" alt="Krossovkalar">
+            <div><span>01</span><h3>Krossovkalar</h3><i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="#products" class="category-card" data-category="Sport">
+            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=600&q=85" alt="Sport oyoq kiyimlari">
+            <div><span>02</span><h3>Sport</h3><i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="#products" class="category-card" data-category="Tuflilar">
+            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=600&q=85" alt="Klassik tuflilar">
+            <div><span>03</span><h3>Tuflilar</h3><i class="fas fa-arrow-right"></i></div>
+        </a>
+        <a href="#products" class="category-card" data-category="Botinkalar">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=85" alt="Botinkalar">
+            <div><span>04</span><h3>Botinkalar</h3><i class="fas fa-arrow-right"></i></div>
+        </a>
+    </div>
+</section>
+
+<section class="products section" id="products">
+    <div class="section-title">
+        <div>
+            <span class="eyebrow">BIZNING TANLOV</span>
+            <h2>Mashhur mahsulotlar</h2>
+        </div>
+        <a href="#products" class="text-link" id="show-all">Barchasini ko‘rish <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="shop-toolbar">
+        <div class="filter-list">
+            <button class="filter-btn active" data-filter="Barchasi">Barchasi</button>
+            <button class="filter-btn" data-filter="Krossovkalar">Krossovkalar</button>
+            <button class="filter-btn" data-filter="Sport">Sport</button>
+            <button class="filter-btn" data-filter="Tuflilar">Tuflilar</button>
+            <button class="filter-btn" data-filter="Botinkalar">Botinkalar</button>
+        </div>
+        <select id="sort-products">
+            <option value="default">Saralash</option>
+            <option value="low">Arzonidan boshlab</option>
+            <option value="high">Qimmatidan boshlab</option>
+            <option value="name">Nomi bo‘yicha</option>
+        </select>
+    </div>
+
+    <div class="product-grid" id="product-grid"></div>
+    <p class="empty-message" id="empty-message" hidden>Mahsulot topilmadi.</p>
+</section>
+
+<section class="promo section">
+    <div class="promo-content">
+        <span class="eyebrow">MAXSUS TAKLIF</span>
+        <h2>Yangi mavsum.<br>Yangi imkoniyatlar.</h2>
+        <p>O‘zingiz yoqtirgan uslubni toping va har bir qadamingizni yanada qulay qiling.</p>
+        <a href="#products" class="btn">Katalogni ochish <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="promo-image">
+        <img src="https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=1000&q=85" alt="Zamonaviy oyoq kiyim">
+    </div>
+</section>
+
+<section class="benefits section">
+    <div class="section-title">
+        <div>
+            <span class="eyebrow">NIMA UCHUN STEPLUX?</span>
+            <h2>Sifatni har qadamda his eting</h2>
+        </div>
+    </div>
+    <div class="benefit-grid">
+        <div class="benefit-card"><i class="fas fa-shield-alt"></i><h3>Sifat kafolati</h3><p>Har bir mahsulotga e'tibor va sifatga alohida yondashuv.</p></div>
+        <div class="benefit-card"><i class="fas fa-truck-fast"></i><h3>Tez yetkazib berish</h3><p>Buyurtmangizni qulay vaqtda manzilingizga yetkazamiz.</p></div>
+        <div class="benefit-card"><i class="fas fa-credit-card"></i><h3>Qulay to‘lov</h3><p>Buyurtma uchun sizga mos to‘lov usulini tanlang.</p></div>
+        <div class="benefit-card"><i class="fas fa-headset"></i><h3>Doimiy yordam</h3><p>Savollaringiz bo‘yicha biz bilan bog‘lanishingiz mumkin.</p></div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=900&q=85" alt="StepLux uslubi">
+    </div>
+    <div class="about-content">
+        <span class="eyebrow">BIZNING HIKOYA</span>
+        <h2>Uslub — bu shunchaki ko‘rinish emas.</h2>
+        <p>StepLux zamonaviy dizayn, kundalik qulaylik va o‘ziga xos uslubni birlashtirish uchun yaratilgan. Biz har bir mijoz o‘ziga mos poyabzalni topishini istaymiz.</p>
+        <div class="about-numbers">
+            <div><strong>5+</strong><span>Yillik tajriba</span></div>
+            <div><strong>10K+</strong><span>Mamnun mijozlar</span></div>
+        </div>
+        <a href="#contact" class="btn">Biz bilan bog‘laning</a>
+    </div>
+</section>
+
+<section class="reviews section">
+    <div class="section-title">
+        <div>
+            <span class="eyebrow">MIJOZLARIMIZ</span>
+            <h2>Ular biz haqimizda nima deydi?</h2>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter section">
+    <div><span class="eyebrow">STEPLUX YANGILIKLARI</span><h2>Yangiliklardan xabardor bo‘ling.</h2><p>Yangi mahsulotlar va chegirmalar haqida birinchilardan bo‘lib biling.</p></div>
+    <form id="newsletter-form"><input type="email" id="newsletter-email" placeholder="Email manzilingiz" required><button class="btn" type="submit">Obuna bo‘lish <i class="fas fa-arrow-right"></i></button></form>
+</section>
+
+<footer class="footer" id="contact">
+    <div class="footer-grid">
+        <div><a href="#home" class="logo"><i class="fas fa-shoe-prints"></i> StepLux</a><p>Har bir qadamda o‘z uslubingni yarat.</p><div class="socials"><a href="#contact"><i class="fab fa-instagram"></i></a><a href="#contact"><i class="fab fa-telegram"></i></a><a href="#contact"><i class="fab fa-youtube"></i></a><a href="#contact"><i class="fab fa-tiktok"></i></a></div></div>
+        <div><h3>Tezkor havolalar</h3><a href="#home">Bosh sahifa</a><a href="#categories">Kategoriyalar</a><a href="#products">Mahsulotlar</a><a href="#about">Biz haqimizda</a></div>
+        <div><h3>Mijozlar uchun</h3><a href="#contact">Yetkazib berish</a><a href="#contact">To‘lov usullari</a><a href="#contact">Qaytarish siyosati</a><a href="#contact">Yordam markazi</a></div>
+        <div><h3>Aloqa</h3><p><i class="fas fa-phone"></i> +998 99 123 45 67</p><p><i class="fas fa-envelope"></i> info@steplux.uz</p><p><i class="fas fa-location-dot"></i> Toshkent, O‘zbekiston</p></div>
+    </div>
+    <div class="copyright"><p>© 2026 StepLux. Barcha huquqlar himoyalangan.</p><a href="#home">Yuqoriga qaytish ↑</a></div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-panel" id="cart-panel">
+    <div class="cart-heading"><h2>Savatingiz</h2><button id="close-cart"><i class="fas fa-times"></i></button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-bottom"><h3>Jami: <span id="cart-total">0 so‘m</span></h3><button class="btn" id="checkout">Buyurtma berish</button></div>
+</aside>
+
+<div class="modal" id="user-modal">
+    <button class="modal-close" id="close-user"><i class="fas fa-times"></i></button>
+    <h2>Xush kelibsiz!</h2>
+    <p>Yangiliklar va buyurtmalar haqida ma'lumot olish uchun emailingizni kiriting.</p>
+    <form id="user-form"><input type="email" placeholder="Email manzilingiz" required><button class="btn">Davom etish</button></form>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
